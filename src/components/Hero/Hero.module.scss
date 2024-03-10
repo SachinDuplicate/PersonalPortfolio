@@ -78,15 +78,23 @@
             }
         }
 
-        .email {
-            @media (max-width: $sm ) {
-                position: relative;
-                display: none;
-            }
+        .header__socials {
+            display:flex;
+            font-size: 30px;
+            flex-direction:row;
+            align-items: center;
+            gap: 0.8rem;
             position: absolute;
-            top: 50%;
-            left: 0;
-            color: rgb(25, 25, 94);
+            top: 40%;
+            left: 8%;
+            color: rgb(44, 44, 89);
+        }
+        
+        .header__socials::after {
+            content: "";
+            width: 1px;
+            height: 2rem;
+            background: var(--color-primary);
         }
     }
 }

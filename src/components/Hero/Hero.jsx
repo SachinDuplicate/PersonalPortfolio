@@ -3,6 +3,10 @@ import { fadeIn, slideIn, staggerContainer } from "../../utils/motion";
 import css from "./Hero.module.scss";
 import { motion } from "framer-motion";
 import TypeWriter from "typewriter-effect";
+import {BsLinkedin} from 'react-icons/bs'
+import {FaGithubSquare} from 'react-icons/fa'
+import {SiGmail} from 'react-icons/si' 
+import CV from '../Hero/cv/Sachincv.pdf'
 
 const Hero = () => {
   return (
@@ -19,11 +23,11 @@ const Hero = () => {
           Sachin Budha Magar
           <br/>
           <h1 className="typewriter"> 
-          :-Developer at{' '}
+          :-Developer {' '}
             <span >
               <TypeWriter
                   options={{
-                    strings: ['"Robotics Association of Nepal"'],
+                    strings: ['"OpenToWork"'],
                     autoStart: true,
                     pause: true,
                     loop: 1,
@@ -47,15 +51,19 @@ const Hero = () => {
           <motion.img variants={slideIn("up", "tween", 0.5, 1.3)} src="./pic.png" alt="" />
         </motion.div>
 
-        <a className={css.email} href="mailto:sachinduplicate10@gmail.com">
-          sachinduplicate10@gmail.com
-        </a>
+        <div className={css.header__socials}>
+        <a href='https://linkedin.com' rel="noopener"><BsLinkedin color = 'rgb(44, 44, 89)'/></a>
+        <a href='https://github.com' rel="noopener"><FaGithubSquare color = 'rgb(44, 44, 89)'/></a>
+        <a href='https://gmail.com' rel="noopener"><SiGmail color = 'rgb(44, 44, 89)'/></a>
+        </div>
+
 
         <div className={css.lowerElements}>
           <motion.div variants={fadeIn("right", "tween", 0.3, 1)} className={css.experience}>
             <div className="primaryText">999</div>
             <div className="secondaryText">
               <div>Junior Developer</div>
+              <a href={CV} download className='secondaryText'>Download CV </a>
             </div>
           </motion.div>
 
