@@ -4,14 +4,14 @@ import css from "./Footer.module.scss";
 import {motion} from 'framer-motion'
 const Footer = () => {
   return (
-    <motion.section
+    <section>
+      <a className="anchor" id="Footer"></a>
+      <motion.section
     variants={staggerChildren}
     initial="hidden"
     whileInView="show"
     viewport={{ once: false, amount: 0.25 }}
     className={`paddings ${css.wrapper}`}>
-      
-      
       <motion.div
       variants={footerVariants}
       className={`innerWidth yPaddings flexCenter ${css.container}`}>
@@ -31,7 +31,8 @@ const Footer = () => {
             <p>Chhyamasi, Bhaktapur, Nepal</p>
             <p>+9779746486167</p>
           </div>
-          <ul className={css.menu}>
+          <ul className={css.footer}>
+            <li><a href="#Hero">Home</a></li>
             <li><a href="#experties">Services</a></li>
             <li><a href="#work">Experience</a></li>
             <li><a href="#Projects">Projects</a></li>
@@ -39,6 +40,8 @@ const Footer = () => {
         </div>
       </motion.div>
     </motion.section>
+    </section>
+    
   );
 };
 

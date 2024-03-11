@@ -29,16 +29,17 @@ const Header = () => {
       style={{boxShadow: headerShadow}}
     >
       <div className={`innerWidth ${css.container} flexCenter`}>
-      <img src="./logo.png" alt="" />
+      <img src="./logo.png" width="130" height="65" alt="" />
         <ul
           className={`flexCenter ${css.menu}`}
           ref={menuRef}
           style={getMenuStyles(menuOpened)}
         >
-          <li><a href="#Hero">DuplicateWrld</a></li>
+          <li><a href="#Hero">Home</a></li>
           <li><a href="#experties">Services</a></li>
           <li><a href="#work">Experience</a></li>
           <li><a href="#Projects">Projects</a></li>
+          <li><a className={`flexCenter ${css.phone}`} href="#Footer"><BiPhoneCall size={"40px"}/></a></li>
         </ul>
         
           <div>
@@ -46,12 +47,6 @@ const Header = () => {
           </div>
 
         {/* for medium and small screens */}
-        <div
-          className={css.menuIcon}
-          onClick={() => setMenuOpened((prev) => !prev)}
-        >
-          <BiMenuAltRight size={30} />
-        </div>
       </div>
     </motion.div>
   );

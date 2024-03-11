@@ -23,11 +23,11 @@
 
         .lowerElements {
             @media (max-width: $sm), (max-width: $md) {
-                margin-top: 4rem;
+                margin-top: 6rem;
                 gap: 2rem;
                 justify-content: center;
             }
-            margin-top: 12rem;
+            margin-top: 23.5rem;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -43,6 +43,7 @@
             .certificate {
                 display: flex;
                 flex-direction: column;
+                margin-top: -7rem;
                 align-items: center;
 
                 img {
@@ -63,7 +64,7 @@
                 background-position: bottom;
             }
             position: absolute;
-            bottom: -2rem;
+            bottom: -2.2rem;
             margin: auto;
             background-image: url("../splash.png");
             background-repeat: no-repeat;
@@ -81,7 +82,7 @@
         .header__socials {
             display:flex;
             font-size: 30px;
-            flex-direction:row;
+            flex-direction:column;
             align-items: center;
             gap: 0.8rem;
             position: absolute;
@@ -90,11 +91,5 @@
             color: rgb(44, 44, 89);
         }
         
-        .header__socials::after {
-            content: "";
-            width: 1px;
-            height: 2rem;
-            background: var(--color-primary);
-        }
     }
 }

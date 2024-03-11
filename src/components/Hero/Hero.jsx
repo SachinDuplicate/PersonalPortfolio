@@ -11,6 +11,7 @@ import CV from '../Hero/cv/Sachincv.pdf'
 const Hero = () => {
   return (
     <section className={`paddings ${css.wrapper}`}>
+      <a className="anchor" id="Hero"></a>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -23,21 +24,22 @@ const Hero = () => {
           Sachin Budha Magar
           <br/>
           <h1 className="typewriter"> 
-          :-Developer {' '}
             <span >
+              :-Developer at
               <TypeWriter
                   options={{
-                    strings: ['"OpenToWork"'],
+                    strings: ['"Robotics Association of Nepal"'],
                     autoStart: true,
                     pause: true,
-                    loop: 1,
+                    loop: 2,
+                    typeSpeed: 70,
                   }}
                 />
             </span>
             </h1>
             <media/>
           </motion.span>
-          <motion.span className="secondaryText"variants={fadeIn("left", "tween", 0.4, 1)}>
+          <motion.span className="line" variants={fadeIn("left", "tween", 0.4, 1)}>
             I'm a learner
             <br />
             with excellent problem solving capacity.{" "}
@@ -53,7 +55,7 @@ const Hero = () => {
 
         <div className={css.header__socials}>
         <a href='https://linkedin.com' rel="noopener"><BsLinkedin color = 'rgb(44, 44, 89)'/></a>
-        <a href='https://github.com' rel="noopener"><FaGithubSquare color = 'rgb(44, 44, 89)'/></a>
+        <a href='https://github.com' rel="noopener"><FaGithubSquare color = 'rgb(44, 44, 89)'/>  </a>
         <a href='https://gmail.com' rel="noopener"><SiGmail color = 'rgb(44, 44, 89)'/></a>
         </div>
 
