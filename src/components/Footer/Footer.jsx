@@ -31,12 +31,6 @@ const Footer = () => {
             <p>Chhyamasi, Bhaktapur, Nepal</p>
             <p>+9779746486167</p>
           </div>
-          <ul className={css.footer}>
-            <li><a href="#Hero">Home</a></li>
-            <li><a href="#experties">Services</a></li>
-            <li><a href="#work">Experience</a></li>
-            <li><a href="#Projects">Projects</a></li>
-          </ul>
         </div>
       </motion.div>
     </motion.section>
