@@ -1,140 +1,176 @@
-@import './contants.scss';
-
+/* Background color */
 .bg-primary {
   background: #F8F7F1;
 }
 
+/* Inner width */
 .innerWidth {
-  @media (min-width: $xxl) {
-    max-width: 1280px;
-    margin: auto;
-  }
-
   width: 100%;
 }
 
+@media (min-width: 1200px) {
+  .innerWidth {
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+
+/* Padding */
 .paddings {
-  @media (min-width: $sm) {
+  padding: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .paddings {
     padding: 4rem;
   }
+}
 
-  @media (min-width: $xl),
-  (min-width: $md) {
+@media (min-width: 768px) {
+  .paddings {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
+/* X Paddings */
 .xPaddings {
-  @media (min-width: $sm) {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .xPaddings {
     padding-left: 4rem;
     padding-right: 4rem;
   }
-
-  padding-left: 1.5rem;
-  /* 24px */
-  padding-right: 1.5rem;
-  /* 24px */
 }
 
+/* Y Paddings */
 .yPaddings {
-  @media (min-width: $sm) {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  @media (min-width: $xl) {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
+@media (min-width: 576px) {
+  .yPaddings {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .yPaddings {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Top Paddings */
 .topPaddings {
-  @media (min-width : $sm) {
-    padding-top: 4rem;
-  }
-
-  @media (min-width: $xl) {
-    padding-top: 2rem;
-  }
-
   padding-top: 3rem;
 }
 
+@media (min-width: 576px) {
+  .topPaddings {
+    padding-top: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .topPaddings {
+    padding-top: 2rem;
+  }
+}
+
+/* Bottom Paddings */
 .bottomPaddings {
-  @media (min-width : $sm) {
-    padding-bottom: 4rem;
-  }
-
-  @media (min-width: $xl) {
-    padding-bottom: 2rem;
-  }
-
   padding-bottom: 3rem;
 }
 
+@media (min-width: 576px) {
+  .bottomPaddings {
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bottomPaddings {
+    padding-bottom: 2rem;
+  }
+}
+
+/* Flex Center */
 .flexCenter {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Flex Start */
 .flexStart {
   display: flex;
   justify-content: start;
   align-items: center;
 }
 
+/* Flex End */
 .flexEnd {
   display: flex;
   justify-items: end;
 }
 
+/* Primary Text */
 .primaryText {
-  @media (max-width: $sm) {
-    font-size: 2.5rem;
-  }
   font-size: 3rem;
   font-weight: bold;
 }
 
+@media (max-width: 576px) {
+  .primaryText {
+    font-size: 2.5rem;
+  }
+}
+
+/* Typewriter */
 .typewriter {
   font-size: 29px;
   padding-left: 35px;
   margin: 0;
 }
 
+/* Secondary Text */
 .secondaryText {
-  @media (max-width: $sm) {
-    font-size: 1.1rem;
-    line-height: 40px;
-  }
-  color: #191543;
-  line-height: 50px;
   font-size: 1.3rem;
+  line-height: 50px;
+  color: #191543;
   font-weight: 500;
 }
 
-.line {
-  @media (max-width: $sm) {
+@media (max-width: 576px) {
+  .secondaryText {
     font-size: 1.1rem;
     line-height: 40px;
   }
-  color: #191543;
-  line-height: 50px;
+}
+
+/* Line */
+.line {
   font-size: 1.3rem;
+  line-height: 50px;
+  color: #191543;
   text-align: center;
   font-weight: 500;
 }
 
+@media (max-width: 576px) {
+  .line {
+    font-size: 1.1rem;
+    line-height: 40px;
+  }
+}
+
+/* Anchor */
 .anchor {
   display: block;
   position: relative;

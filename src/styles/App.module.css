@@ -1,0 +1,7 @@
+@import url('./contants.css');
+
+.container {
+    overflow-x: clip;
+    position: relative;
+    color: var(--primary);
+}

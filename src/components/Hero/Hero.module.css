@@ -1,0 +1,112 @@
+/* Import constants */
+@import url('../../styles/contants.css');
+
+.wrapper {
+    overflow: hidden;
+}
+
+.wrapper .container {
+    position: relative;
+    z-index: 1;
+}
+
+.wrapper .container .upperElements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .wrapper .container .upperElements {
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+    }
+}
+
+.wrapper .container .lowerElements {
+    margin-top: 23.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    /* CSS rules for screens with a maximum width of 768 pixels */
+    .wrapper .container .upperElements {
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* CSS rules for screens with a maximum width of 1024 pixels */
+    .wrapper .container .lowerElements {
+        margin-top: 6rem;
+        gap: 2rem;
+        justify-content: center;
+    }
+}
+
+.wrapper .container .lowerElements .experience {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.wrapper .container .lowerElements .experience > :nth-child(2) {
+    line-height: 25px;
+}
+
+.wrapper .container .lowerElements .certificate {
+    display: flex;
+    flex-direction: column;
+    margin-top: -7rem;
+    align-items: center;
+}
+
+.wrapper .container .lowerElements .certificate img {
+    margin-bottom: 1rem;
+    width: 3rem;
+}
+
+.wrapper .container .person {
+    position: absolute;
+    bottom: -2.2rem;
+    margin: auto;
+    background-image: url("../splash.png");
+    background-repeat: no-repeat;
+    background-size: 28rem;
+    left: 33%;
+}
+
+@media (max-width: 768px) {
+    .wrapper .container .person {
+        position: relative;
+        left: 0;
+        background-size: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: bottom;
+    }
+}
+
+.wrapper .container .person img {
+    width: 23rem;
+    margin-bottom: -5px;
+}
+
+.wrapper .container .header__socials {
+    display: flex;
+    font-size: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    color: rgb(44, 44, 89);
+}

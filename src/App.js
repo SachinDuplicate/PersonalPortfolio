@@ -5,7 +5,7 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Projects from './components/Projects/Projects';
 import Work from './components/Work/Work';
-import css from './styles/App.module.scss';
+import css from './styles/App.module.css';
 
 const App = () => {
   // don't forget to add font link in index.html

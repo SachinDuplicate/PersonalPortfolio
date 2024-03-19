@@ -1,0 +1,62 @@
+@import url('../../styles/contants.css');
+
+.wrapper {
+    background: white;
+}
+
+.wrapper .container {
+    gap: 2rem;
+}
+
+.wrapper .container .left {
+    flex: 3;
+}
+
+.wrapper .container .left > * {
+    display: block;
+}
+
+.wrapper .container .left > :nth-child(2) {
+    margin-top: 3rem;
+}
+
+.wrapper .container .left > :nth-child(2) a {
+    text-decoration: underline;
+    color: orange;
+}
+
+.wrapper .container .right {
+    flex: 1;
+}
+
+.wrapper .container .right .info {
+    margin-bottom: 1rem;
+}
+
+.wrapper .container .right .footer {
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+}
+
+.wrapper .container .right .footer li {
+    cursor: pointer;
+}
+
+.wrapper .container .right .footer li:hover {
+    text-decoration-color: black;
+}
+
+@media (max-width: 768px) {
+    .wrapper .container {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .wrapper .container .right .footer {
+        flex-direction: row;
+    }
+}
