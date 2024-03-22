@@ -44,7 +44,7 @@ const Hero = () => {
           ),
           React.createElement(motion.span, {
               className: "line",
-              variants: fadeIn("left", "tween", 0.4, 1)
+              variants: fadeIn("left", "tween", 0.4, 0.8)
             },
             "I'm a learner",
             React.createElement("br", null),
