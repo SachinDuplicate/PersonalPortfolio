@@ -9,6 +9,7 @@ import css from "./Hero.module.css";
 import CV from '../Hero/cv/Sachincv.pdf';
 
 const Hero = () => {
+
   return (
     React.createElement("section", { className: `paddings ${css.wrapper}` },
       React.createElement("a", { className: "anchor", id: "Hero" }),
@@ -28,14 +29,16 @@ const Hero = () => {
             React.createElement("br", null),
             React.createElement("h1", { className: "typewriter" },
               React.createElement("span", null,
-                ":-Developer at",
+                ":-Developer",
                 React.createElement(TypeWriter, {
                   options: {
-                    strings: ['"Robotics Association of Nepal"'],
+                    strings: ['"OpenToWork"'],
                     autoStart: true,
-                    pause: true,
                     loop: 2,
-                    typeSpeed: 70
+                    pause: true,
+                    typeSpeed: 70,
+                    deleteSpeed: 80,
+                    
                   }
                 })
               )
@@ -59,7 +62,7 @@ const Hero = () => {
           React.createElement(motion.img, {
             variants: slideIn("up", "tween", 0.5, 2.3),
             src: "./pic.png",
-            alt: ""
+            alt: "Picture of mine"
           })
         ),
 
@@ -83,7 +86,7 @@ const Hero = () => {
             React.createElement("div", { className: "primaryText" }, "999"),
             React.createElement("div", { className: "secondaryText" },
               React.createElement("div", null, "Junior Developer"),
-              React.createElement("a", { href: CV, download: true, className: 'secondaryText' }, "Download CV ")
+              React.createElement("a", { href: CV, download: true, alt:"", className: 'secondaryText' }, "Download CV ")
             )
           ),
 
@@ -91,7 +94,7 @@ const Hero = () => {
               variants: fadeIn("left", "tween", 0.5, 1),
               className: css.certificate
             },
-            React.createElement("img", { src: "./python.png", alt: "" }),
+            React.createElement("img", { src: "./python.png", alt: "Logo of python" }),
             React.createElement("span", null, "Django"),
             React.createElement("span", null, "Back-end Developer")
           )

@@ -27,7 +27,7 @@ const Header = () => {
       style: { boxShadow: headerShadow }
     }, 
     React.createElement("div", { className: `innerWidth ${css.container} flexCenter` },
-      React.createElement("img", { src: "./logo.png", width: "130", height: "65", alt: "" }),
+      React.createElement("img", { src: "./logo.png", width: "130", height: "65", alt: "Personal Logo" }),
       React.createElement("ul", { 
         className: `flexCenter ${css.menu}`,
         ref: menuRef,
@@ -37,6 +37,7 @@ const Header = () => {
         React.createElement("li", null, React.createElement("a", { href: "#experties" }, "Services")),
         React.createElement("li", null, React.createElement("a", { href: "#work" }, "Experience")),
         React.createElement("li", null, React.createElement("a", { href: "#Projects" }, "Projects")),
+        React.createElement("li", null, React.createElement("a", { href: "#Hire" }, "Hire")),
         React.createElement("li", null, React.createElement("a", { className: `flexCenter ${css.phone}`, href: "#Footer" }, React.createElement(BiPhoneCall, { size: "40px" })))
       ),
 
